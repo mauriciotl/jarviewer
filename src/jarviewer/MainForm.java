@@ -25,6 +25,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -123,6 +124,7 @@ public class MainForm extends javax.swing.JFrame {
 
             }
         ));
+        tblClasses.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane2.setViewportView(tblClasses);
 
         entriesTabPane.addTab("Classes", jScrollPane2);
@@ -261,7 +263,7 @@ public class MainForm extends javax.swing.JFrame {
             TableSorter sorter = new TableSorter(new JarEntryModel(file));
             tblClasses.setModel(sorter);
             sorter.setTableHeader(tblClasses.getTableHeader());
-
+            tblClasses.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
             TableSorter manifestSorter = new TableSorter(new AttributeModel(file));
             tblManifest.setModel(manifestSorter);
             manifestSorter.setTableHeader(tblManifest.getTableHeader());

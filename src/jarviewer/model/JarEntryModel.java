@@ -95,7 +95,7 @@ public class JarEntryModel extends AbstractTableModel {
     }
 
     /**
-     * Gets the Jar file and extracts all classe names and package names for
+     * Gets the Jar file and extracts all classes names and package names for
      * all the files in the Jar file.  These entries are then stored in an
      * ArrayList of JarEntry objects.
      */
