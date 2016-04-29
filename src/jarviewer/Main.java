@@ -49,4 +49,6 @@ public class Main {
             }
         });
     }
+    
+    private static final Logger LOG = Logger.getLogger(Main.class.getName());
 }
