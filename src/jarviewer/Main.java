@@ -51,4 +51,8 @@ public class Main {
     }
     
     private static final Logger LOG = Logger.getLogger(Main.class.getName());
+    
+    //This will be a second test
+    //It's just about this comment
+    
 }
